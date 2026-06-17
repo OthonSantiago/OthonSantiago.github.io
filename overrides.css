@@ -48,7 +48,7 @@
 }
 
 .profile-orb::before {
-  content: "Falar comigo";
+  content: "Me chame aqui";
   position: absolute;
   top: -14px;
   left: 24px;
@@ -132,25 +132,80 @@
   background: #2ea043;
 }
 
+.button.whatsapp {
+  color: #ffffff;
+  background: #238636;
+  border: 1px solid rgba(240, 246, 252, 0.10);
+}
+
+.button.whatsapp:hover {
+  background: #2ea043;
+}
+
 .about-section {
-  padding: 76px 0;
+  padding: 82px 0;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 34px;
+  align-items: start;
+}
+
+.about-heading {
+  position: sticky;
+  top: 92px;
+}
+
+.about-panel {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(88, 166, 255, 0.12), transparent 34%),
+    linear-gradient(180deg, rgba(22, 27, 34, 0.90), rgba(13, 17, 23, 0.94));
+  box-shadow: 0 18px 50px rgba(1, 4, 9, 0.22);
+}
+
+.about-panel p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.03rem;
+  line-height: 1.68;
+}
+
+.about-panel p + p {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.about-lead {
+  color: var(--text) !important;
+  font-size: 1.12rem !important;
+  letter-spacing: -0.02em;
+}
+
+.about-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.about-points span {
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--text);
+  background: rgba(22, 27, 34, 0.86);
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-
-.about-grid p {
-  margin: 0;
-  padding: 24px;
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  color: var(--muted);
-  background: linear-gradient(180deg, rgba(22, 27, 34, 0.86), rgba(13, 17, 23, 0.92));
-  font-size: 1rem;
-  line-height: 1.62;
+  display: none;
 }
 
 @media (max-width: 1040px) {
@@ -161,8 +216,12 @@
     transform: translateY(-50%) rotate(-1.2deg);
   }
 
-  .about-grid {
+  .about-layout {
     grid-template-columns: 1fr;
+  }
+
+  .about-heading {
+    position: static;
   }
 }
 
@@ -189,5 +248,9 @@
 
   .profile-copy span {
     max-width: none;
+  }
+
+  .about-panel {
+    padding: 22px;
   }
 }
