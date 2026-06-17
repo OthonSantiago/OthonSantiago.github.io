@@ -5,11 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Othon Santiago - Desenvolvedor focado em IA aplicada ao SOC, automações, integrações, ferramentas ITSM, GLPI e melhoria de processos operacionais." />
   <title>Othon Santiago | IA aplicada ao SOC, Automações e Integrações</title>
-  <link rel="stylesheet" href="style.css?v=motion-landing-20260617" />
+  <link rel="stylesheet" href="style.css?v=bpm-motion-20260617" />
 </head>
 <body>
   <div class="animated-bg" aria-hidden="true"></div>
   <div class="motion-grid" aria-hidden="true"></div>
+
+  <svg class="bpm-background" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L0,6 L9,3 z" />
+      </marker>
+    </defs>
+
+    <path class="flow-line flow-a" d="M90 190 H255 C310 190 310 285 365 285 H560 C620 285 620 392 680 392 H875" />
+    <path class="flow-line flow-b" d="M230 560 H410 C470 560 470 470 530 470 H760 C820 470 820 610 880 610 H1160" />
+    <path class="flow-line flow-c" d="M710 155 V250 C710 315 780 315 780 380 V520" />
+    <path class="flow-line flow-d" d="M1030 245 H1180 C1235 245 1235 345 1290 345" />
+
+    <g class="bpm-node node-1">
+      <circle cx="90" cy="190" r="22" />
+      <text x="90" y="195">START</text>
+    </g>
+    <g class="bpm-node node-2">
+      <rect x="255" y="160" width="145" height="62" rx="12" />
+      <text x="327" y="196">API</text>
+    </g>
+    <g class="bpm-node node-3">
+      <rect x="560" y="255" width="150" height="62" rx="12" />
+      <text x="635" y="291">IA</text>
+    </g>
+    <g class="bpm-node node-4">
+      <rect x="875" y="360" width="180" height="64" rx="12" />
+      <text x="965" y="397">ITSM</text>
+    </g>
+    <g class="bpm-node node-5">
+      <rect x="410" y="530" width="160" height="62" rx="12" />
+      <text x="490" y="566">SIEM</text>
+    </g>
+    <g class="bpm-node node-6">
+      <rect x="880" y="580" width="180" height="64" rx="12" />
+      <text x="970" y="617">EVIDÊNCIA</text>
+    </g>
+    <g class="bpm-node node-7">
+      <circle cx="1290" cy="345" r="24" />
+      <text x="1290" y="350">OK</text>
+    </g>
+  </svg>
 
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="Othon Santiago">S</a>
@@ -31,13 +73,16 @@
           Desenvolvo soluções internas, integrações e fluxos técnicos para reduzir trabalho manual, organizar processos e aumentar visibilidade operacional.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="https://www.linkedin.com/in/othon-santiago/" target="_blank" rel="noopener noreferrer">Conectar no LinkedIn</a>
-          <a class="button secondary" href="#contato">Entrar em contato</a>
+          <a class="button primary" href="https://wa.me/5519993564274?text=Ol%C3%A1%2C%20Othon.%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20automa%C3%A7%C3%B5es%2C%20integra%C3%A7%C3%B5es%20ou%20IA%20aplicada%20ao%20SOC." target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/othon-santiago/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
 
       <aside class="visual-stage" aria-label="Perfil profissional de Othon Santiago">
         <img class="cover-stage" src="assets/linkedin-cover.jpg?v=2" alt="Capa profissional de Othon Santiago" />
+        <div class="stage-flow" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
         <div class="profile-orb">
           <img class="profile-photo" src="https://avatars.githubusercontent.com/u/42503621?v=4" alt="Foto de Othon Santiago" />
           <div>
@@ -45,8 +90,8 @@
             <span>Desenvolvimento • Automação • IA aplicada ao SOC</span>
           </div>
         </div>
-        <div class="floating-card card-one">AI for SOC</div>
-        <div class="floating-card card-two">Python • APIs</div>
+        <div class="floating-card card-one">BPM Flow</div>
+        <div class="floating-card card-two">API • IA</div>
         <div class="floating-card card-three">ITSM • SIEM</div>
       </aside>
     </section>
@@ -112,13 +157,13 @@
     <section class="process section-wide">
       <div class="section-heading">
         <p class="eyebrow">Como eu penso</p>
-        <h2>Menos ferramenta solta. Mais fluxo funcionando.</h2>
+        <h2>Do fluxo manual ao processo automatizado.</h2>
       </div>
-      <div class="process-line">
-        <div><strong>Mapear</strong><span>entender o processo real</span></div>
-        <div><strong>Automatizar</strong><span>reduzir esforço manual</span></div>
-        <div><strong>Integrar</strong><span>conectar sistemas e dados</span></div>
-        <div><strong>Documentar</strong><span>facilitar operação e manutenção</span></div>
+      <div class="process-timeline">
+        <article><span>01</span><strong>Mapear</strong><p>entender o processo real</p></article>
+        <article><span>02</span><strong>Desenhar</strong><p>modelar o fluxo e integrações</p></article>
+        <article><span>03</span><strong>Automatizar</strong><p>reduzir esforço manual</p></article>
+        <article><span>04</span><strong>Medir</strong><p>documentar, validar e evoluir</p></article>
       </div>
     </section>
 
@@ -129,7 +174,7 @@
         <p>Atendo como consultor autônomo em automações, integrações, GLPI, ITSM, IA aplicada ao SOC e melhoria de processos operacionais.</p>
       </div>
       <div class="contact-actions">
-        <a class="button primary" href="https://www.linkedin.com/in/othon-santiago/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a class="button primary" href="https://wa.me/5519993564274?text=Ol%C3%A1%2C%20Othon.%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20automa%C3%A7%C3%B5es%2C%20integra%C3%A7%C3%B5es%20ou%20IA%20aplicada%20ao%20SOC." target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a class="button secondary" href="mailto:othon_mateus@hotmail.com">E-mail</a>
       </div>
     </section>
