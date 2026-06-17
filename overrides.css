@@ -48,19 +48,7 @@
 }
 
 .profile-orb::before {
-  content: "Me chame aqui";
-  position: absolute;
-  top: -14px;
-  left: 24px;
-  padding: 7px 12px;
-  border: 1px solid rgba(48, 54, 61, 0.26);
-  border-radius: 999px;
-  color: #0d1117;
-  background: rgba(255, 255, 255, 0.94);
-  font-size: 0.78rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  box-shadow: 0 12px 30px rgba(1, 4, 9, 0.25);
+  display: none;
 }
 
 .profile-photo-link {
@@ -132,14 +120,53 @@
   background: #2ea043;
 }
 
-.button.whatsapp {
+.button.linkedin {
   color: #ffffff;
-  background: #238636;
-  border: 1px solid rgba(240, 246, 252, 0.10);
+  background: #0a66c2;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.button.whatsapp:hover {
-  background: #2ea043;
+.button.linkedin:hover {
+  background: #0b72d9;
+}
+
+.button.email {
+  color: var(--accent);
+  background: var(--surface-solid);
+  border: 1px solid var(--line);
+}
+
+.button.linkedin,
+.button.email {
+  gap: 8px;
+}
+
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.linkedin-icon {
+  background: #0a66c2;
+  font-family: Arial, sans-serif;
+}
+
+.microsoft-icon {
+  background: linear-gradient(135deg, #f25022 0 50%, #7fba00 50% 100%);
+  font-size: 0.92rem;
+}
+
+.whatsapp-icon {
+  background: #238636;
+  font-size: 0.82rem;
 }
 
 .about-section {
@@ -208,6 +235,69 @@
   display: none;
 }
 
+.footer-contact {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 46px 0 52px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 28px;
+  align-items: end;
+  border-top: 1px solid var(--line);
+}
+
+.footer-copy h2 {
+  margin-bottom: 10px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
+.footer-copy p:not(.eyebrow) {
+  max-width: 620px;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.5;
+}
+
+.footer-copy span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.contact-link,
+.footer-language {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--text);
+  background: rgba(22, 27, 34, 0.88);
+  font-size: 0.94rem;
+  font-weight: 800;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.contact-link:hover,
+.footer-language:hover {
+  transform: translateY(-1px);
+  border-color: rgba(88, 166, 255, 0.48);
+  background: rgba(22, 27, 34, 1);
+}
+
+.whatsapp-link {
+  border-color: rgba(63, 185, 80, 0.34);
+}
+
 @media (max-width: 1040px) {
   .profile-orb {
     left: 0;
@@ -216,12 +306,17 @@
     transform: translateY(-50%) rotate(-1.2deg);
   }
 
-  .about-layout {
+  .about-layout,
+  .footer-contact {
     grid-template-columns: 1fr;
   }
 
   .about-heading {
     position: static;
+  }
+
+  .footer-actions {
+    justify-content: flex-start;
   }
 }
 
@@ -252,5 +347,9 @@
 
   .about-panel {
     padding: 22px;
+  }
+
+  .footer-contact {
+    width: min(100% - 32px, 1180px);
   }
 }
