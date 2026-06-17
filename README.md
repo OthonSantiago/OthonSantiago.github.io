@@ -2,9 +2,10 @@
 
 Este repositório hospeda a landing page pessoal de **Othon Santiago**, com foco em desenvolvimento de automações, integrações, implantação de GLPI, ITSM, IA aplicada e melhoria de processos operacionais.
 
-## Site publicado
+## Sites publicados
 
-https://othonsantiago.github.io
+- PT-BR: https://othonsantiago.github.io
+- EN: https://othonsantiago.github.io/en.html
 
 ## Stack
 
@@ -14,7 +15,9 @@ https://othonsantiago.github.io
 
 ## Conteúdo
 
-- Apresentação profissional
+- Página principal em português
+- Página secundária em inglês
+- Layout minimalista, claro e responsivo
 - Foto de perfil pública do GitHub
 - Experiências reais e frentes de atuação
 - Implantação e evolução de GLPI
@@ -22,7 +25,6 @@ https://othonsantiago.github.io
 - Integrações entre sistemas
 - Automação agêntica com IA
 - Segurança, SIEM e dados operacionais
-- Resumo secundário em inglês
 - Links de contato
 
 ## Links
@@ -34,6 +36,7 @@ https://othonsantiago.github.io
 
 ## English
 
-This repository hosts the professional landing page for **Othon Santiago**, focused on automation development, integrations, GLPI implementation, ITSM, applied AI and operational process improvement.
+This repository hosts the professional portfolio for **Othon Santiago**, focused on automation development, integrations, GLPI implementation, ITSM, applied AI and operational process improvement.
 
-Live site: https://othonsantiago.github.io
+- PT-BR: https://othonsantiago.github.io
+- EN: https://othonsantiago.github.io/en.html
