@@ -1,6 +1,6 @@
-# Othon Santiago — Landing Page Profissional
+# Othon Santiago — Portfólio Profissional
 
-Este repositório hospeda a landing page pessoal de **Othon Santiago**, com foco em Segurança da Informação, automação SOC, SIEM Engineering, IBM QRadar, Blue Team e governança de segurança.
+Este repositório hospeda a landing page pessoal de **Othon Santiago**, com foco em desenvolvimento de automações, integrações, implantação de GLPI, ITSM, IA aplicada e melhoria de processos operacionais.
 
 ## Site publicado
 
@@ -12,15 +12,18 @@ https://othonsantiago.github.io
 - CSS3
 - GitHub Pages
 
-## Estrutura da página
+## Conteúdo
 
-- Hero em PT-BR
-- Sobre
-- Competências
-- Projetos
-- Princípios
-- Seção secundária em inglês
-- Contato
+- Apresentação profissional
+- Foto de perfil pública do GitHub
+- Experiências reais e frentes de atuação
+- Implantação e evolução de GLPI
+- Automações diversas
+- Integrações entre sistemas
+- Automação agêntica com IA
+- Segurança, SIEM e dados operacionais
+- Resumo secundário em inglês
+- Links de contato
 
 ## Links
 
@@ -31,6 +34,6 @@ https://othonsantiago.github.io
 
 ## English
 
-This repository hosts the professional landing page for **Othon Santiago**, focused on cybersecurity, SOC automation, SIEM engineering, IBM QRadar, Blue Team operations and security governance.
+This repository hosts the professional landing page for **Othon Santiago**, focused on automation development, integrations, GLPI implementation, ITSM, applied AI and operational process improvement.
 
 Live site: https://othonsantiago.github.io
