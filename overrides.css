@@ -27,7 +27,7 @@
 }
 
 .profile-orb {
-  left: 50%;
+  left: 44%;
   right: auto;
   bottom: 50%;
   width: 355px;
@@ -132,12 +132,37 @@
   background: #2ea043;
 }
 
+.about-section {
+  padding: 76px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.about-grid p {
+  margin: 0;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  color: var(--muted);
+  background: linear-gradient(180deg, rgba(22, 27, 34, 0.86), rgba(13, 17, 23, 0.92));
+  font-size: 1rem;
+  line-height: 1.62;
+}
+
 @media (max-width: 1040px) {
   .profile-orb {
     left: 0;
     bottom: auto;
     top: 50%;
     transform: translateY(-50%) rotate(-1.2deg);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 }
 
