@@ -31,7 +31,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -3;
+  z-index: -4;
   background:
     radial-gradient(circle at 14% 22%, rgba(88, 166, 255, 0.16), transparent 30rem),
     radial-gradient(circle at 84% 14%, rgba(63, 185, 80, 0.12), transparent 28rem),
@@ -41,8 +41,8 @@ body::before {
 .animated-bg {
   position: fixed;
   inset: -25%;
-  z-index: -2;
-  opacity: 0.7;
+  z-index: -3;
+  opacity: 0.72;
   pointer-events: none;
   background:
     radial-gradient(circle at 20% 30%, rgba(88, 166, 255, 0.22), transparent 22rem),
@@ -55,15 +55,102 @@ body::before {
 .motion-grid {
   position: fixed;
   inset: 0;
-  z-index: -1;
+  z-index: -2;
   pointer-events: none;
-  opacity: 0.22;
+  opacity: 0.18;
   background-image:
-    linear-gradient(rgba(88, 166, 255, 0.16) 1px, transparent 1px),
+    linear-gradient(rgba(88, 166, 255, 0.15) 1px, transparent 1px),
     linear-gradient(90deg, rgba(88, 166, 255, 0.12) 1px, transparent 1px);
   background-size: 64px 64px;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.78), transparent 80%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.78), transparent 82%);
   animation: gridMove 20s linear infinite;
+}
+
+.bpm-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.30;
+  filter: drop-shadow(0 0 12px rgba(88, 166, 255, 0.16));
+  animation: blueprintDrift 18s ease-in-out infinite alternate;
+}
+
+.bpm-background marker path {
+  fill: rgba(88, 166, 255, 0.68);
+}
+
+.flow-line {
+  fill: none;
+  stroke: rgba(88, 166, 255, 0.72);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  marker-end: url(#arrow);
+  animation: drawFlow 8s ease-in-out infinite;
+}
+
+.flow-b { animation-delay: 1.4s; }
+.flow-c { animation-delay: 2.5s; }
+.flow-d { animation-delay: 3.5s; }
+
+.bpm-node rect,
+.bpm-node circle {
+  fill: rgba(13, 17, 23, 0.62);
+  stroke: rgba(63, 185, 80, 0.70);
+  stroke-width: 1.6;
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  animation: drawNode 8s ease-in-out infinite;
+}
+
+.bpm-node text {
+  fill: rgba(240, 246, 252, 0.72);
+  font-size: 14px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: middle;
+  letter-spacing: 0.08em;
+  opacity: 0;
+  animation: fadeText 8s ease-in-out infinite;
+}
+
+.node-2 rect, .node-2 text { animation-delay: .7s; }
+.node-3 rect, .node-3 text { animation-delay: 1.4s; }
+.node-4 rect, .node-4 text { animation-delay: 2.1s; }
+.node-5 rect, .node-5 text { animation-delay: 2.8s; }
+.node-6 rect, .node-6 text { animation-delay: 3.5s; }
+.node-7 circle, .node-7 text { animation-delay: 4.2s; }
+
+@keyframes drawFlow {
+  0% { stroke-dashoffset: 1200; opacity: 0; }
+  12% { opacity: 1; }
+  55% { stroke-dashoffset: 0; opacity: 1; }
+  85% { stroke-dashoffset: 0; opacity: 0.55; }
+  100% { stroke-dashoffset: -1200; opacity: 0; }
+}
+
+@keyframes drawNode {
+  0% { stroke-dashoffset: 240; opacity: 0; }
+  18% { opacity: 1; }
+  52% { stroke-dashoffset: 0; opacity: 1; }
+  88% { opacity: .65; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeText {
+  0%, 20% { opacity: 0; }
+  42%, 78% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes blueprintDrift {
+  0% { transform: translate3d(-1%, -1%, 0) scale(1); }
+  100% { transform: translate3d(1.5%, 1%, 0) scale(1.025); }
 }
 
 @keyframes floatBg {
@@ -253,11 +340,36 @@ h3 {
     linear-gradient(180deg, transparent 40%, rgba(1, 4, 9, 0.92));
 }
 
+.stage-flow {
+  position: absolute;
+  inset: 26px;
+  z-index: 1;
+  opacity: 0.62;
+}
+
+.stage-flow span {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(88, 166, 255, 0.9), transparent);
+  box-shadow: 0 0 20px rgba(88, 166, 255, 0.26);
+  animation: scanLine 3.8s ease-in-out infinite;
+}
+
+.stage-flow span:nth-child(1) { top: 22%; left: 4%; width: 78%; }
+.stage-flow span:nth-child(2) { top: 46%; right: 2%; width: 62%; animation-delay: 1s; }
+.stage-flow span:nth-child(3) { top: 68%; left: 12%; width: 70%; animation-delay: 2s; }
+
+@keyframes scanLine {
+  0% { transform: scaleX(0); opacity: 0; }
+  35% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(1); opacity: 0; }
+}
+
 .profile-orb {
   position: absolute;
   left: 28px;
   bottom: 28px;
-  z-index: 1;
+  z-index: 2;
   width: calc(100% - 56px);
   display: flex;
   align-items: center;
@@ -293,7 +405,7 @@ h3 {
 
 .floating-card {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   padding: 10px 13px;
   border: 1px solid rgba(240, 246, 252, 0.14);
   border-radius: 999px;
@@ -396,25 +508,70 @@ h3 {
   font-size: 0.94rem;
 }
 
-.process-line {
+.process-timeline {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid var(--line);
+  gap: 14px;
 }
-.process-line div {
-  padding: 24px 24px 24px 0;
-  border-right: 1px solid var(--line);
+
+.process-timeline::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 8%;
+  right: 8%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(88,166,255,0.1), rgba(88,166,255,0.95), rgba(63,185,80,0.75));
+  transform-origin: left;
+  animation: timelineDraw 5s ease-in-out infinite;
 }
-.process-line div:last-child { border-right: none; }
-.process-line strong,
-.process-line span { display: block; }
-.process-line strong {
-  margin-bottom: 6px;
+
+.process-timeline article {
+  position: relative;
+  min-height: 150px;
+  padding: 58px 20px 20px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(22, 27, 34, 0.84);
+}
+
+.process-timeline article::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent-2);
+  box-shadow: 0 0 0 6px rgba(63, 185, 80, 0.12);
+}
+
+.process-timeline span,
+.process-timeline strong,
+.process-timeline p { display: block; }
+.process-timeline span {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+.process-timeline strong {
+  margin: 6px 0;
   color: var(--text);
-  font-size: 1.12rem;
-  letter-spacing: -0.035em;
+  font-size: 1.1rem;
 }
-.process-line span { color: var(--muted); }
+.process-timeline p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@keyframes timelineDraw {
+  0% { transform: scaleX(0); opacity: 0; }
+  35%, 75% { transform: scaleX(1); opacity: 1; }
+  100% { transform: scaleX(1); opacity: 0; }
+}
 
 .contact {
   margin-bottom: 64px;
@@ -464,8 +621,9 @@ h3 {
     gap: 42px;
   }
   .visual-stage { max-width: 620px; min-height: 500px; }
-  .work-grid { grid-template-columns: repeat(2, 1fr); }
-  .process-line { grid-template-columns: repeat(2, 1fr); }
+  .work-grid,
+  .process-timeline { grid-template-columns: repeat(2, 1fr); }
+  .process-timeline::before { display: none; }
   .contact {
     align-items: flex-start;
     flex-direction: column;
@@ -505,17 +663,13 @@ h3 {
   }
   .floating-card { display: none; }
   .work-grid,
-  .process-line { grid-template-columns: 1fr; }
+  .process-timeline { grid-template-columns: 1fr; }
   .work-card { min-height: auto; }
   .statement { padding: 62px 0; text-align: left; }
   .work-section,
   .stack-section,
   .process,
   .contact { padding: 62px 0; }
-  .process-line div {
-    border-right: none;
-    border-bottom: 1px solid var(--line);
-  }
   .contact { padding: 28px; }
   .footer { flex-direction: column; }
 }
