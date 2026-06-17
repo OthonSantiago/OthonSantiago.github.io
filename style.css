@@ -224,8 +224,19 @@ main {
 }
 
 .banner,
+.contact,
+.language-section {
+  position: relative;
+}
+
+.banner,
 .contact {
   padding: 42px;
+}
+
+.language-section {
+  border-top: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
 }
 
 .banner p,
