@@ -1,4 +1,4 @@
-# Othon Santiago — Portfólio Profissional
+# Othon Santiago  Portfólio Profissional
 
 Este repositório hospeda a landing page pessoal de **Othon Santiago**, com foco em desenvolvimento de automações, integrações, implantação de GLPI, ITSM, IA aplicada e melhoria de processos operacionais.
 
