@@ -3,10 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Othon Santiago - Desenvolvedor focado em IA aplicada, automação, segurança, integrações, ferramentas ITSM, GLPI e melhoria de processos operacionais." />
-  <title>Othon Santiago | IA aplicada, Automação e Segurança</title>
+  <meta name="description" content="Consultoria em automação de operações SOC e TI, integrações entre SIEM, Microsoft Defender, ITSM e APIs, com foco em governança, rastreabilidade e redução de tarefas manuais." />
+  <meta name="author" content="Othon Santiago" />
+  <meta name="theme-color" content="#0d1117" />
+
+  <title>Othon Santiago | Consultoria em Automação, SOC e Segurança</title>
+  <link rel="canonical" href="https://othonsantiago.github.io/" />
+  <link rel="alternate" hreflang="pt-BR" href="https://othonsantiago.github.io/" />
+  <link rel="alternate" hreflang="en" href="https://othonsantiago.github.io/en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://othonsantiago.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Othon Santiago | Consultoria em Automação, SOC e Segurança" />
+  <meta property="og:description" content="Automação e integração para operações de Segurança e TI mais eficientes, rastreáveis e fáceis de manter." />
+  <meta property="og:url" content="https://othonsantiago.github.io/" />
+  <meta property="og:image" content="https://othonsantiago.github.io/assets/linkedin-cover.jpg" />
+  <meta property="og:image:alt" content="Othon Santiago — Automação, SOC e Segurança Operacional" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Othon Santiago | Consultoria em Automação, SOC e Segurança" />
+  <meta name="twitter:description" content="Automação e integração para operações de Segurança e TI mais eficientes, rastreáveis e fáceis de manter." />
+  <meta name="twitter:image" content="https://othonsantiago.github.io/assets/linkedin-cover.jpg" />
+
   <link rel="stylesheet" href="style.css?v=bpm-motion-20260617" />
   <link rel="stylesheet" href="overrides.css?v=header-en-20260617" />
+  <link rel="stylesheet" href="consultant.css?v=consultoria-20260622" />
 </head>
 <body>
   <div class="animated-bg" aria-hidden="true"></div>
@@ -18,192 +40,263 @@
         <path d="M0,0 L0,6 L9,3 z" />
       </marker>
     </defs>
-
     <path class="flow-line flow-a" d="M90 190 H255 C310 190 310 285 365 285 H560 C620 285 620 392 680 392 H875" />
     <path class="flow-line flow-b" d="M230 560 H410 C470 560 470 470 530 470 H760 C820 470 820 610 880 610 H1160" />
     <path class="flow-line flow-c" d="M710 155 V250 C710 315 780 315 780 380 V520" />
     <path class="flow-line flow-d" d="M1030 245 H1180 C1235 245 1235 345 1290 345" />
-
-    <g class="bpm-node node-1">
-      <circle cx="90" cy="190" r="22" />
-      <text x="90" y="195">START</text>
-    </g>
-    <g class="bpm-node node-2">
-      <rect x="255" y="160" width="145" height="62" rx="12" />
-      <text x="327" y="196">API</text>
-    </g>
-    <g class="bpm-node node-3">
-      <rect x="560" y="255" width="150" height="62" rx="12" />
-      <text x="635" y="291">IA</text>
-    </g>
-    <g class="bpm-node node-4">
-      <rect x="875" y="360" width="180" height="64" rx="12" />
-      <text x="965" y="397">ITSM</text>
-    </g>
-    <g class="bpm-node node-5">
-      <rect x="410" y="530" width="160" height="62" rx="12" />
-      <text x="490" y="566">SIEM</text>
-    </g>
-    <g class="bpm-node node-6">
-      <rect x="880" y="580" width="180" height="64" rx="12" />
-      <text x="970" y="617">EVIDÊNCIA</text>
-    </g>
-    <g class="bpm-node node-7">
-      <circle cx="1290" cy="345" r="24" />
-      <text x="1290" y="350">OK</text>
-    </g>
+    <g class="bpm-node node-1"><circle cx="90" cy="190" r="22" /><text x="90" y="195">START</text></g>
+    <g class="bpm-node node-2"><rect x="255" y="160" width="145" height="62" rx="12" /><text x="327" y="196">API</text></g>
+    <g class="bpm-node node-3"><rect x="560" y="255" width="150" height="62" rx="12" /><text x="635" y="291">IA</text></g>
+    <g class="bpm-node node-4"><rect x="875" y="360" width="180" height="64" rx="12" /><text x="965" y="397">ITSM</text></g>
+    <g class="bpm-node node-5"><rect x="410" y="530" width="160" height="62" rx="12" /><text x="490" y="566">SIEM</text></g>
+    <g class="bpm-node node-6"><rect x="880" y="580" width="180" height="64" rx="12" /><text x="970" y="617">EVIDÊNCIA</text></g>
+    <g class="bpm-node node-7"><circle cx="1290" cy="345" r="24" /><text x="1290" y="350">OK</text></g>
   </svg>
 
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Othon Santiago">S</a>
-    <nav class="nav-links" aria-label="Navegação principal">
+  <header class="site-header consultant-header">
+    <a class="consultant-brand" href="#inicio" aria-label="Othon Santiago — início">
+      <span class="brand-mark">OS</span>
+      <span class="brand-text"><strong>Othon Santiago</strong><small>Automação &amp; Segurança Operacional</small></span>
+    </a>
+
+    <nav class="nav-links consultant-nav" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#casos">Experiências</a>
+      <a href="#metodo">Método</a>
       <a href="#sobre">Sobre</a>
-      <a href="#frentes">Frentes</a>
-      <a href="#stack">Stack</a>
-      <a href="#contato">Contato</a>
-      <a class="language-link" href="en.html">EN</a>
+      <a class="language-link" href="en.html" lang="en">EN</a>
     </nav>
+
+    <a class="header-cta" href="https://wa.me/5519993564274?text=Ol%C3%A1%2C%20Othon.%20Gostaria%20de%20avaliar%20uma%20rotina%20de%20Seguran%C3%A7a%20ou%20TI%20que%20atualmente%20%C3%A9%20executada%20de%20forma%20manual." target="_blank" rel="noopener noreferrer">Solicitar diagnóstico</a>
   </header>
 
-  <main>
-    <section class="hero section-wide">
-      <aside class="visual-stage" aria-label="Perfil profissional de Othon Santiago">
-        <img class="cover-stage" src="assets/linkedin-cover.jpg?v=2" alt="Capa profissional de Othon Santiago" />
-        <div class="stage-flow" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="profile-orb">
-          <a class="profile-photo-link" href="https://wa.me/5519993564274?text=Ol%C3%A1%2C%20Othon.%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20automa%C3%A7%C3%B5es%2C%20integra%C3%A7%C3%B5es%20ou%20seguran%C3%A7a." target="_blank" rel="noopener noreferrer" aria-label="Falar com Othon pelo WhatsApp">
-            <img class="profile-photo" src="https://avatars.githubusercontent.com/u/42503621?v=4" alt="Foto de Othon Santiago" />
-          </a>
-          <div class="profile-copy">
-            <strong>Othon Santiago</strong>
-            <span>IA aplicada • Automação • Segurança</span>
-            <a class="profile-whatsapp" href="https://wa.me/5519993564274?text=Ol%C3%A1%2C%20Othon.%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20automa%C3%A7%C3%B5es%2C%20integra%C3%A7%C3%B5es%20ou%20seguran%C3%A7a." target="_blank" rel="noopener noreferrer">Me chame aqui</a>
-          </div>
-        </div>
-      </aside>
-
+  <main id="inicio">
+    <section class="hero consultant-hero section-wide">
       <div class="hero-copy">
-        <p class="eyebrow">IA aplicada • Automação • Segurança</p>
-        <h1>Automação útil para operação real.</h1>
+        <p class="eyebrow">Consultoria em automação, SOC e segurança operacional</p>
+        <h1>Transformo rotinas manuais em processos automatizados, rastreáveis e seguros.</h1>
         <p class="lead">
-          Desenvolvo soluções internas, integrações e fluxos técnicos para reduzir trabalho manual, organizar processos e aumentar visibilidade operacional.
+          Ajudo operações de Segurança e TI a integrar SIEM, Microsoft Defender, ITSM e APIs, reduzindo tarefas repetitivas e melhorando a governança sem interromper os fluxos que já funcionam.
         </p>
         <div class="hero-actions">
-          <a class="button linkedin" href="https://br.linkedin.com/in/othon-santiago" target="_blank" rel="noopener noreferrer"><span class="contact-icon linkedin-icon">in</span>LinkedIn</a>
-          <a class="button email" href="mailto:othon_mateus@hotmail.com"><span class="contact-icon microsoft-icon">▦</span>E-mail</a>
+          <a class="button primary consultant-primary" href="https://wa.me/5519993564274?text=Ol%C3%A1%2C%20Othon.%20Gostaria%20de%20avaliar%20uma%20rotina%20de%20Seguran%C3%A7a%20ou%20TI%20que%20atualmente%20%C3%A9%20executada%20de%20forma%20manual." target="_blank" rel="noopener noreferrer">Solicitar diagnóstico técnico</a>
+          <a class="button secondary consultant-secondary" href="#casos">Ver experiências aplicadas</a>
+        </div>
+        <div class="hero-proof" aria-label="Áreas de especialidade">
+          <span>SOC &amp; SIEM</span>
+          <span>Automação</span>
+          <span>ITSM</span>
+          <span>Integrações por API</span>
         </div>
       </div>
-    </section>
 
-    <section id="sobre" class="about-section section-wide">
-      <div class="about-layout">
-        <div class="section-heading about-heading">
-          <p class="eyebrow">Sobre mim</p>
-          <h2>Perfil técnico com foco em resolver problemas reais de operação.</h2>
+      <aside class="consulting-stage" aria-label="Modelo de atuação de Othon Santiago">
+        <div class="stage-topline">
+          <span class="status-dot" aria-hidden="true"></span>
+          <strong>Do processo real à operação governada</strong>
         </div>
 
-        <div class="about-panel">
-          <p class="about-lead">
-            Sou profissional de Segurança da Informação com atuação em SOC, SIEM, automações e melhoria de processos técnicos. Minha experiência une visão operacional, desenvolvimento de scripts, integrações entre ferramentas e estruturação de fluxos mais simples, rastreáveis e fáceis de manter.
-          </p>
-          <p>
-            Tenho trabalhado com ambientes como IBM QRadar, Elastic/Kibana, Microsoft Defender, GLPI e ferramentas ITSM, sempre buscando transformar rotinas manuais em processos automatizados, documentados e úteis para quem opera no dia a dia.
-          </p>
+        <div class="consulting-flow" aria-hidden="true">
+          <div class="flow-step"><span>01</span><strong>Diagnóstico</strong><small>processo e riscos</small></div>
+          <div class="flow-connector"></div>
+          <div class="flow-step"><span>02</span><strong>Automação</strong><small>integrações e execução</small></div>
+          <div class="flow-connector"></div>
+          <div class="flow-step"><span>03</span><strong>Governança</strong><small>evidência e auditoria</small></div>
+        </div>
 
-          <div class="about-points">
-            <span>Segurança da Informação</span>
-            <span>SOC / SIEM</span>
-            <span>Automações</span>
-            <span>Integrações</span>
-            <span>GLPI / ITSM</span>
-            <span>Processos operacionais</span>
+        <div class="consultant-profile-card">
+          <img src="https://avatars.githubusercontent.com/u/42503621?v=4" alt="Foto profissional de Othon Santiago" />
+          <div>
+            <strong>Othon Santiago</strong>
+            <span>Segurança da Informação, automação e melhoria de processos operacionais.</span>
           </div>
         </div>
+
+        <div class="stage-tags" aria-label="Tecnologias principais">
+          <span>QRadar</span><span>Elastic</span><span>Defender</span><span>ManageEngine</span><span>GLPI</span>
+        </div>
+      </aside>
+    </section>
+
+    <section id="problemas" class="section-wide consulting-section">
+      <div class="section-heading consulting-heading">
+        <p class="eyebrow">Onde a consultoria atua</p>
+        <h2>Problemas operacionais que não deveriam depender de trabalho manual.</h2>
+        <p>O ponto de partida é o processo utilizado hoje pelos analistas — com suas regras, exceções, dependências e riscos reais.</p>
+      </div>
+
+      <div class="problem-grid">
+        <article class="problem-card"><span>01</span><h3>Rotinas repetitivas no SOC</h3><p>Consultas, evidências, atualizações de tickets e validações que consomem tempo do analista.</p></article>
+        <article class="problem-card"><span>02</span><h3>Ferramentas desconectadas</h3><p>SIEM, Defender, ITSM e fontes operacionais sem integração ou fluxo padronizado.</p></article>
+        <article class="problem-card"><span>03</span><h3>Baixa rastreabilidade</h3><p>Execuções sem histórico claro, evidências consistentes, critérios de aprovação ou trilha de auditoria.</p></article>
+        <article class="problem-card"><span>04</span><h3>Automação difícil de manter</h3><p>Scripts sem documentação, credenciais expostas, regras acopladas e alto risco de quebra na evolução.</p></article>
       </div>
     </section>
 
-    <section id="frentes" class="section-wide work-section">
-      <div class="section-heading">
-        <p class="eyebrow">Frentes principais</p>
-        <h2>O que eu ajudo a construir.</h2>
+    <section id="servicos" class="section-wide consulting-section">
+      <div class="section-heading consulting-heading split-heading">
+        <div>
+          <p class="eyebrow">Serviços</p>
+          <h2>Da avaliação técnica à entrega documentada.</h2>
+        </div>
+        <p>Cada trabalho é estruturado para preservar a operação atual, reduzir risco e deixar uma base simples de entender, operar e evoluir.</p>
       </div>
 
-      <div class="work-grid">
-        <article class="work-card">
-          <span class="number">01</span>
-          <h3>IA aplicada ao SOC</h3>
-          <p>Automação assistida por IA para apoiar análise, documentação, evidências, revisão humana e governança em rotinas de segurança.</p>
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-number">01</span>
+          <h3>Diagnóstico de automação operacional</h3>
+          <p>Mapeamento do fluxo, gargalos, riscos, integrações e oportunidades de automação.</p>
+          <ul><li>Levantamento do processo real</li><li>Mapa de dependências e riscos</li><li>Plano técnico priorizado</li></ul>
         </article>
-        <article class="work-card">
-          <span class="number">02</span>
-          <h3>Automações e integrações</h3>
-          <p>Scripts, APIs e fluxos para conectar ferramentas, consolidar dados e reduzir tarefas repetitivas.</p>
+        <article class="service-card">
+          <span class="service-number">02</span>
+          <h3>Automação para SOC e Segurança</h3>
+          <p>Execução assistida ou automatizada de consultas, evidências, validações e rotinas operacionais.</p>
+          <ul><li>Fluxos com revisão humana</li><li>Registro de evidências</li><li>Políticas de autonomia</li></ul>
         </article>
-        <article class="work-card">
-          <span class="number">03</span>
-          <h3>GLPI e ferramentas ITSM</h3>
-          <p>Implantação, evolução e organização de GLPI, ManageEngine e processos de atendimento técnico.</p>
+        <article class="service-card">
+          <span class="service-number">03</span>
+          <h3>Integração SIEM, Defender e ITSM</h3>
+          <p>Conexão entre plataformas para eliminar retrabalho e manter o ciclo operacional sincronizado.</p>
+          <ul><li>REST APIs e webhooks</li><li>Tickets, status e respostas</li><li>Tratamento de erros e fallback</li></ul>
         </article>
-        <article class="work-card">
-          <span class="number">04</span>
-          <h3>Segurança, SOC e SIEM</h3>
-          <p>Vivência com QRadar, Elastic, Defender, evidências técnicas, consultas, healthcheck e melhoria de processos de segurança.</p>
+        <article class="service-card">
+          <span class="service-number">04</span>
+          <h3>Governança e documentação</h3>
+          <p>Arquitetura, controles, rastreabilidade e documentação para operação, suporte e evolução.</p>
+          <ul><li>Documentação N1, N2 e técnica</li><li>Auditoria e troubleshooting</li><li>Boas práticas de segurança</li></ul>
         </article>
       </div>
     </section>
 
-    <section id="stack" class="section-wide stack-section">
-      <div class="section-heading center">
-        <p class="eyebrow">Stack</p>
-        <h2>Ferramentas que entram no fluxo.</h2>
+    <section id="casos" class="section-wide consulting-section">
+      <div class="section-heading consulting-heading">
+        <p class="eyebrow">Experiências aplicadas</p>
+        <h2>Projetos construídos a partir de desafios reais de operação.</h2>
+        <p>Os exemplos abaixo são apresentados de forma anonimizada e sem expor informações de clientes ou ambientes.</p>
       </div>
-      <div class="stack-grid">
-        <span>IA aplicada</span>
-        <span>Python</span>
-        <span>PowerShell</span>
-        <span>REST APIs</span>
-        <span>GLPI</span>
-        <span>ManageEngine</span>
-        <span>Git/GitHub</span>
-        <span>Docker</span>
-        <span>Linux</span>
-        <span>Windows Server</span>
-        <span>IBM QRadar</span>
-        <span>Elastic/Kibana</span>
-        <span>Microsoft Defender</span>
+
+      <div class="case-grid">
+        <article class="case-card">
+          <div class="case-meta"><span>Automação SOC</span><span>Defender · Elastic · ITSM</span></div>
+          <h3>Orquestração de rotinas com evidências e retorno ao chamado</h3>
+          <p>Estruturação de fluxos que executam consultas operacionais, registram evidências, respeitam revisão humana e atualizam o sistema de chamados sem substituir os processos existentes.</p>
+          <div class="case-outcome"><strong>Entregáveis</strong><span>Fluxo governado, execução rastreável, documentação e tratamento de exceções.</span></div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-meta"><span>Governança SIEM</span><span>QRadar · PowerShell · APIs</span></div>
+          <h3>Healthcheck técnico com coleta somente leitura</h3>
+          <p>Consolidação de informações sobre saúde, retenção, armazenamento, fontes de log, ofensivas e componentes para apoiar decisões técnicas sem alterar o ambiente analisado.</p>
+          <div class="case-outcome"><strong>Entregáveis</strong><span>Coleta segura, diagnóstico consolidado, riscos priorizados e recomendações técnicas.</span></div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-meta"><span>Operação ITSM</span><span>ManageEngine · GLPI · APIs</span></div>
+          <h3>Padronização de tickets, evidências e respostas operacionais</h3>
+          <p>Organização do ciclo entre tickets pais e filhos, execução de atividades, registro de resolução e consolidação de respostas para reduzir inconsistências e facilitar a auditoria.</p>
+          <div class="case-outcome"><strong>Entregáveis</strong><span>Padrão operacional, integração reutilizável, histórico consistente e menor retrabalho.</span></div>
+        </article>
       </div>
     </section>
 
-    <section class="process section-wide">
-      <div class="section-heading">
-        <p class="eyebrow">Como eu penso</p>
-        <h2>Do fluxo manual ao processo automatizado.</h2>
+    <section id="metodo" class="section-wide consulting-section">
+      <div class="section-heading consulting-heading">
+        <p class="eyebrow">Método de trabalho</p>
+        <h2>Evolução incremental, sem automatizar o caos.</h2>
+        <p>Antes de escrever código, o processo é entendido, documentado e validado com quem realmente opera a rotina.</p>
       </div>
-      <div class="process-timeline">
-        <article><span>01</span><strong>Mapear</strong><p>entender o processo real</p></article>
-        <article><span>02</span><strong>Desenhar</strong><p>modelar o fluxo e integrações</p></article>
-        <article><span>03</span><strong>Automatizar</strong><p>reduzir esforço manual</p></article>
-        <article><span>04</span><strong>Medir</strong><p>documentar, validar e evoluir</p></article>
+
+      <div class="method-grid">
+        <article><span>01</span><strong>Diagnosticar</strong><p>Entender o fluxo atual, regras, exceções, riscos e responsáveis.</p></article>
+        <article><span>02</span><strong>Desenhar</strong><p>Modelar integrações, segurança, evidências e critérios de aceite.</p></article>
+        <article><span>03</span><strong>Implementar</strong><p>Construir de forma incremental, simples e desacoplada.</p></article>
+        <article><span>04</span><strong>Validar</strong><p>Executar testes controlados sem gerar impacto no ambiente produtivo.</p></article>
+        <article><span>05</span><strong>Documentar</strong><p>Entregar arquitetura, operação, suporte e troubleshooting.</p></article>
+        <article><span>06</span><strong>Evoluir</strong><p>Acompanhar métricas, novas rotinas e oportunidades de melhoria.</p></article>
+      </div>
+    </section>
+
+    <section id="sobre" class="section-wide consulting-section about-consultant">
+      <div class="about-consultant-copy">
+        <p class="eyebrow">Sobre Othon Santiago</p>
+        <h2>Visão operacional, desenvolvimento e segurança no mesmo projeto.</h2>
+        <p class="about-highlight">Sou profissional de Segurança da Informação especializado em aproximar operação, automação e governança.</p>
+        <p>Minha atuação parte do processo real utilizado pelos analistas: entendo o fluxo, identifico riscos e gargalos e desenvolvo soluções que sejam simples de operar, documentar e manter.</p>
+        <p>Tenho experiência prática com ambientes SOC, SIEM, Microsoft Defender, Elastic, IBM QRadar, GLPI, ManageEngine e integrações por API. O objetivo não é automatizar por automatizar, mas entregar processos confiáveis, rastreáveis e compatíveis com a realidade da operação.</p>
+      </div>
+
+      <aside class="authority-panel" aria-label="Credenciais e especialidades">
+        <div class="authority-profile">
+          <img src="https://avatars.githubusercontent.com/u/42503621?v=4" alt="Othon Santiago" />
+          <div><strong>Othon Santiago</strong><span>Consultoria em Automação e Segurança Operacional</span></div>
+        </div>
+        <div class="authority-list">
+          <div><small>Atuação</small><strong>SOC, SIEM, ITSM e automação</strong></div>
+          <div><small>Formação</small><strong>Ciência da Computação e MBA em Segurança da Informação</strong></div>
+          <div><small>Certificações</small><strong>QRadar, Fortinet, OCI e Microsoft</strong></div>
+          <div><small>Princípios</small><strong>Simplicidade, segurança, documentação e manutenção</strong></div>
+        </div>
+        <div class="authority-links">
+          <a href="https://br.linkedin.com/in/othon-santiago" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/OthonSantiago" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-wide technology-strip" aria-label="Tecnologias e plataformas">
+      <span>Python</span><span>PowerShell</span><span>REST APIs</span><span>IBM QRadar</span><span>Elastic</span><span>Microsoft Defender</span><span>ManageEngine</span><span>GLPI</span><span>Docker</span><span>Linux</span><span>Windows Server</span>
+    </section>
+
+    <section id="contato" class="section-wide final-cta">
+      <div>
+        <p class="eyebrow">Próximo passo</p>
+        <h2>Existe uma rotina manual consumindo tempo da sua equipe?</h2>
+        <p>Vamos avaliar o processo, os riscos e o melhor caminho para automatizar sem comprometer a operação atual.</p>
+      </div>
+      <div class="final-actions">
+        <a class="button primary consultant-primary" href="https://wa.me/5519993564274?text=Ol%C3%A1%2C%20Othon.%20Gostaria%20de%20avaliar%20uma%20rotina%20de%20Seguran%C3%A7a%20ou%20TI%20que%20atualmente%20%C3%A9%20executada%20de%20forma%20manual." target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp</a>
+        <a class="button secondary consultant-secondary" href="mailto:othon.santiago@icloud.com?subject=Diagn%C3%B3stico%20de%20automa%C3%A7%C3%A3o%20operacional">othon.santiago@icloud.com</a>
       </div>
     </section>
   </main>
 
-  <footer id="contato" class="footer footer-contact">
-    <div class="footer-copy">
-      <p class="eyebrow">Contato</p>
-      <h2>Vamos conversar?</h2>
-      <p>Automações, integrações, GLPI, ITSM, IA aplicada e segurança operacional.</p>
-      <span>© 2026 Othon Santiago</span>
+  <footer class="consultant-footer">
+    <div><strong>Othon Santiago</strong><span>Consultoria em Automação, SOC e Segurança Operacional</span></div>
+    <div class="footer-links">
+      <a href="mailto:othon.santiago@icloud.com">E-mail</a>
+      <a href="https://br.linkedin.com/in/othon-santiago" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/OthonSantiago" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="en.html" lang="en">English</a>
     </div>
-
-    <div class="footer-actions" aria-label="Links de contato">
-      <a class="contact-link linkedin-link" href="https://br.linkedin.com/in/othon-santiago" target="_blank" rel="noopener noreferrer"><span class="contact-icon linkedin-icon">in</span><strong>LinkedIn</strong></a>
-      <a class="contact-link email-link" href="mailto:othon_mateus@hotmail.com"><span class="contact-icon microsoft-icon">▦</span><strong>E-mail</strong></a>
-      <a class="contact-link whatsapp-link" href="https://wa.me/5519993564274?text=Ol%C3%A1%2C%20Othon.%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20automa%C3%A7%C3%B5es%2C%20integra%C3%A7%C3%B5es%20ou%20seguran%C3%A7a." target="_blank" rel="noopener noreferrer"><span class="contact-icon whatsapp-icon">☎</span><strong>WhatsApp</strong></a>
-      <a class="footer-language" href="en.html">English version</a>
-    </div>
+    <span>© 2026 Othon Santiago</span>
   </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Othon Santiago",
+    "url": "https://othonsantiago.github.io/",
+    "image": "https://avatars.githubusercontent.com/u/42503621?v=4",
+    "jobTitle": "Consultor em Automação e Segurança Operacional",
+    "email": "mailto:othon.santiago@icloud.com",
+    "sameAs": [
+      "https://github.com/OthonSantiago",
+      "https://br.linkedin.com/in/othon-santiago"
+    ],
+    "knowsAbout": [
+      "Automação de processos",
+      "Security Operations Center",
+      "SIEM",
+      "ITSM",
+      "IBM QRadar",
+      "Elastic Security",
+      "Microsoft Defender",
+      "Integrações por API"
+    ]
+  }
+  </script>
 </body>
 </html>
